@@ -8,16 +8,18 @@ Clase nodo en C++ (Completa)
 
 #include "stdafx.h"
 
-class nodoClass {
+class nodeClass {
 
 public:
-	nodoClass(int n, nodoClass *siguiente = NULL) {
+	nodeClass(int n, nodeClass *next = NULL) {
 		valor = n;
-		siguiente = siguiente;
+		next = next;
+		last = last;
 	}
 
 private:
 	int valor;
-	nodoClass *siguiente;
+	nodeClass *next;
+	nodeClass *last;
 
 };
